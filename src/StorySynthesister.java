@@ -1,6 +1,7 @@
 
-//Adapted from... P. Kumar, "Java main method", JournalDev, 2019. [Online]. Available: https://www.journaldev.com/12552/public-static-void-main-string-args-java-main-method. [Accessed: 30- May- 2019].
+//Adapted from P. Kumar, "Java main method", JournalDev, 2019. [Online]. Available: https://www.journaldev.com/12552/public-static-void-main-string-args-java-main-method. [Accessed: 30- May- 2019].
 // No bugs! Only issue is when user inputs anything other than integer into year int, which is expected. 
+
 import java.util.Scanner; // Imports the Scanner class which helps collect user input.
 
 public class StorySynthesister { // This is the name of our application!
@@ -13,8 +14,15 @@ public class StorySynthesister { // This is the name of our application!
 												 */
 
 		String first, second; // Creating objects with String class . String deals with characters.
-		String newLine = System.getProperty("line.separator"); /* This will retrieve a line separator dependent on OS,
-																* used for readability. */
+		String newLine = System.getProperty("line.separator"); // This will retrieve a line separator dependent on OS,
+																// used for readability.
+		/*
+		 * Adapted from Oracle, "System (Java Platform SE 7 )", Docs.oracle.com, 2019.
+		 * [Online]. Available:
+		 * https://docs.oracle.com/javase/7/docs/api/java/lang/System.html#lineSeparator%28%29.
+		 * [Accessed: 30- May- 2019].
+		 */
+
 		int year; // int is another class that only deals with integers (whole numbers)
 		// Here I am setting up objects to use in my code later on, to prevent
 		// repetition.
