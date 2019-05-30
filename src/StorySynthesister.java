@@ -1,6 +1,6 @@
 
 //Adapted from... P. Kumar, "Java main method", JournalDev, 2019. [Online]. Available: https://www.journaldev.com/12552/public-static-void-main-string-args-java-main-method. [Accessed: 30- May- 2019].
-
+// No bugs! Only issue is when user inputs anything other than integer into year int, which is expected. 
 import java.util.Scanner; // Imports the Scanner class which helps collect user input.
 
 public class StorySynthesister { // This is the name of our application!
@@ -13,20 +13,22 @@ public class StorySynthesister { // This is the name of our application!
 												 */
 
 		String first, second; // Creating objects with String class . String deals with characters.
-		String newLine = System.getProperty("line.separator"); // This will retrieve a line separator dependent on OS.
-																// It is used for readability.
+		String newLine = System.getProperty("line.separator"); /* This will retrieve a line separator dependent on OS,
+																* used for readability. */
 		int year; // int is another class that only deals with integers (whole numbers)
 		// Here I am setting up objects to use in my code later on, to prevent
 		// repetition.
 
 		System.out.println("Please enter your name:"); // Asks the user to enter their name in the console
 		Scanner yourname = new Scanner(System.in); // Creates a Scanner object which holds the properties of the user
-													// input. (You type x, first = x)
+													// input. (You type 'bunny', first = 'bunny')
 		first = yourname.nextLine(); // Reads user input for use later on
 
-		System.out.println("Now please enter the name of our Intro to Programming teacher:"); // Same as above but need
-																								// a new object for
-																								// another name
+		System.out.println(
+				"Now please enter the name of our Intro to Programming teacher:"); /*
+																					 * Same as above but need // a new
+																					 * object for // another name
+																					 */
 		Scanner hisname = new Scanner(System.in);
 		second = hisname.nextLine();
 
